@@ -32,7 +32,7 @@ libdrm_amdgpu = library(
   ],
   c_args : [
     libdrm_c_args,
-    '-DAMDGPU_ASIC_ID_TABLE="@0@"'.format(join_paths(datadir_amdgpu, 'amdgpu.ids')),
+    '-DAMDGPU_ASIC_ID_TABLE="/vendor/etc/hwdata/amdgpu.ids"',
   ],
   include_directories : [inc_root, inc_drm],
   link_with : libdrm,
