@@ -403,4 +403,3 @@ if with_man_pages
   subdir('man')
 endif
 subdir('data')
-subdir('tests')
