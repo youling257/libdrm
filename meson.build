@@ -243,7 +243,7 @@ libdrm_c_args = cc.get_supported_arguments([
   '-Wno-unused-parameter', '-Wno-attributes', '-Wno-long-long',
   '-Wno-missing-field-initializers'])
 
-dep_pciaccess = dependency('pciaccess', version : '>= 0.10', required : with_intel)
+
 dep_cunit = dependency('cunit', version : '>= 2.1', required : false)
 _cairo_tests = get_option('cairo-tests')
 if _cairo_tests != 'false'
